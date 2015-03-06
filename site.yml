@@ -1,0 +1,5 @@
+---
+
+- hosts: mongodbservers
+  roles:
+  - { role: ansible-roles_mongodb-install }

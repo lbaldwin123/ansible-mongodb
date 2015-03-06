@@ -1,0 +1,4 @@
+# from github installing to a relative path
+
+- src: https://github.com/kgorman/ansible-roles_mongodb-install
+  path: roles/
