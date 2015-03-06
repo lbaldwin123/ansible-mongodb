@@ -5,6 +5,12 @@ Ansible playbook(s) and examples for provisioning a simple MongoDB (including Mo
 
 - Ansible (1.8.x)
 - Git (1.9.x)
+
+### Environment
+
+A couple pre-requisites for the target environment must be true:
+
+- The host is already setup, this doesn't dynamically provision hosts (yet). It can be localhost, Rackspace, AWS, or whatever. Your machine just needs to be able to route to it.
 - Public SSH key on hosts to be provisioned as root. Ansible requires this step.
 - RHEL/CentOS (for now..)
 
