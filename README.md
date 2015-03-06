@@ -5,22 +5,30 @@ Ansible playbook(s) and examples for provisioning MongoDB (including MongoDB 3.0
 
 - Ansible (1.8.x)
 - Git (1.9.x)
+- Public SSH key on hosts to be provisioned. Ansible requires this step.
 
 ### Configuration
 
 Configuration is as one would expect. This playbook makes extensive use of roles. Once the roles are installed, tweaks to the configuration can be made.
 
-- Setup hosts file as desired
-- Alter defaults/main.yml for specifics of the installation.
-
 ```bash
-$>./mongodb_roles.sh
-```
 
-### Provisioning
+# clone the repo
+git clone https://github.com/rackerlabs/ansible-mongodb.git
+cd ansible-mongodb
 
-```bash
-$>./mongodb_provision.sh
+# edit hosts file, and change <MYIP> to the ip address of the host to provision
+vi hosts.txt
+
+# install the required roles
+./mongodb_roles.sh
+
+# alter the default config (or at least inspect it for being correct)
+vi roles/ansible-roles_mongodb-install/defaults/main.yml
+
+# provision!
+./mongodb_provision.sh
+
 ```
 
 If you have problems, issues, please enter them here in Github, or hit me up @kennygorman.
