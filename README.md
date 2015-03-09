@@ -48,7 +48,7 @@ Provisioning is simply running the shell script to run the Ansible playbook
 Now you should be able to connect like:
 
 ```bash
-mongodb --host=<MYIP> --port=<MYPORT> --username=<username> --password=<password>
+mongo --host=<MYIP> --port=<MYPORT> --username=<username> --password=<password>
 ```
 
 ### Getting help
