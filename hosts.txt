@@ -1,2 +1,2 @@
 [mongodbservers]
-<MYIP> mongodb_port=9005 mongodb_storage_engine=wiredTiger mongodb_version=3.0.0
+127.0.0.1 mongodb_port=9005 mongodb_storage_engine=wiredTiger mongodb_version=3.0.0
