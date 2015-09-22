@@ -1,5 +1,7 @@
 ---
 
 - hosts: mongodbservers
+  connection: local
+  sudo: true
   roles:
   - { role: ansible-roles_mongodb-install }
